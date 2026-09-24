@@ -3,15 +3,18 @@ import { StyleSheet, View, Text, StatusBar,  } from 'react-native';
 import { Header } from './src/components/Header';
 import { ActionButtons } from './src/components/ActionButtons';
 import { SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
+import { WaterProgress } from './src/components/WaterProgress';
 
 export default function App() {
-  const GOAL = 2000;
+  const GOAL = 2000
+
   return (
     <SafeAreaProvider>
       <SafeAreaView>
         <StatusBar barStyle={'auto'}/>
           <View>
-          <Header GOAL = {GOAL}/>
+          <Header GOAL={GOAL} />
+          <WaterProgress consumed={1000} goal={GOAL}/>
           </View>
       </SafeAreaView>
     </SafeAreaProvider>
