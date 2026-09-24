@@ -1,25 +1,20 @@
 import { useState } from 'react';
-import { StyleSheet, View, StatusBar } from 'react-native';
-import { COLORS } from './src/constants/colors';
+import { StyleSheet, View, Text, StatusBar,  } from 'react-native';
 import { Header } from './src/components/Header';
 import { ActionButtons } from './src/components/ActionButtons';
+import { SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 
 export default function App() {
-  // const GOAL = 2000; // Meta diária em ml
-  // const [consumed, setConsumed] = useState(0);
-
-  // // Função para acumular a quantidade ingerida
-  // const handleAddWater = (amount) => {
-  // };
-
-  // // Função para zerar o contador
-  // const handleReset = () => {
-  // };
-
+  const GOAL = 2000;
   return (
-    <View>
-      <Header />
-      <ActionButtons/>
-    </View>
+    <SafeAreaProvider>
+      <SafeAreaView>
+        <StatusBar barStyle={'auto'}/>
+          <View>
+          <Header GOAL = {GOAL}/>
+          </View>
+      </SafeAreaView>
+    </SafeAreaProvider>
+
   );
 }
