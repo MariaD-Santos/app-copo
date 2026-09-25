@@ -1,10 +1,15 @@
+import { COLORS } from "../constants/colors";
+import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
 
-import { View, Text } from "react-native";
-
-export function ActionButtons(){
-    return(
+export function ActionButtons(acres, consumed) {
+    return (
         <View>
-            <Text>Sou o Botão</Text>
+            <Text>Adicionar consumo:</Text>
+           
+
+            <View>
+               
+            </View>
         </View>
     )
 }
