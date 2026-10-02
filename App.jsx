@@ -5,6 +5,8 @@ import { ActionButtons } from './src/components/ActionButtons';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { WaterProgress } from './src/components/WaterProgress';
 import { COLORS } from './src/constants/colors';
+import { HealthTip } from './src/components/HealthTip';
+import { ChangeGoal } from './src/components/ChangeGoal';
 
 
 export default function App() {
