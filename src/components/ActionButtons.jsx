@@ -1,5 +1,5 @@
 import { COLORS } from "../constants/colors";
-import { View, Text, StyleSheet, Button, TouchableOpacity, Pressable } from "react-native";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 
 export function ActionButtons({onAdd, onReset}) {
     return (
